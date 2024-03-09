@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Super Mario</title>
+</head>
+
+<body>
+    <div class="caixa-video">
+        <video src="assets/video.mp4" autoplay muted loop></video>
+        <div class="mascara-video"></div>
+    </div>
+
+    <div class="caixa-principal">
+        <img src="assets\logo.png" alt="logo super mario" class="logo-mario">
+        <p>Encanadores Mario & Luigi- Resolvendo Seus Problemas Com Estilo! </p>
+        <p>Voçê já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados,canos entupidos ou
+            torneiras que não param de pingar? Não se preocupe,porque estamos aqui para te salvar o dia! Apresentamos a
+            voçês os encanadores mais famosos do Reino dos Cogumelos- Mario e luigi!</p>
+        <button onclick="CliqueiNoBotao()">Fale conosco</button>
+    </div>
+
+    <img src="assets/mario.png" alt="logo mario e luigi" class="imagem-mario-luigi">
+
+    <form class="fale-conosco">
+        <input placeholder="Seu nome" type="text">
+        <input placeholder="Seu telefone" type="tel">
+        <textarea placeholder="como podemos te ajudar?"></textarea>
+        <button onclick="sumirFormulario()">Enviar</button>
+    </form>
+    <div class="mascara-form"></div>
+
+</body>
+ <script>
+    let formulario = document.querySelector(".fale-conosco")
+    let mascara = document.querySelector(".mascara-form")
+
+function CliqueiNoBotao(){
+    formulario.style.left = "700px"
+    mascara.style.visibility = "visible"
+}
+
+function sumirFormulario(){
+    formulario.style.left = "-325px"
+    mascara.style.visibility = "hidden"
+}
+
+
+
+
+
+ </script>
+</html>
